@@ -1,0 +1,94 @@
+1. create folder:
+
+2.into the folder, execute 
+  npx create-next-app@latest .
+
+here is the result
+---------------------------------------    
+  hans@niudeMacBook-Pro ghost-ai % npx create-next-app@latest .
+✔ Would you like to use the recommended Next.js defaults? › Yes, use recommended defaults
+Creating a new Next.js app in /Users/hans/ghost-ai.
+
+Using npm.
+
+Initializing project with template: app-tw 
+
+
+Installing dependencies:
+- next
+- react
+- react-dom
+
+Installing devDependencies:
+- @tailwindcss/postcss
+- @types/node
+- @types/react
+- @types/react-dom
+- eslint
+- eslint-config-next
+- tailwindcss
+- typescript
+
+
+added 360 packages, and audited 361 packages in 24s
+
+143 packages are looking for funding
+  run `npm fund` for details
+
+2 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Generating route types...
+✓ Types generated successfully
+
+Success! Created ghost-ai at /Users/hans/ghost-ai
+
+---------------------------------------
+
+3. reset to my default
+ tell the AI: 
+  Clean up this next.js boilerplate.
+  - Strip globals.css down to just the tailwind directives.
+  - Delete all SVGs in the public folder, but keep the favicon.
+  - Remove page.module.css.
+  - Replace page.tsx with a minimal component that just renders a center div saying "ghost Al".
+  
+4. create folder : app/context/feature-specs
+   add file      : app/context/feature-specs/01-design-system.md
+   add content:
+   
+5. using chat on VSCode and keyin
+   
+   read @context/feature-specs/01-design-system.md
+   update @context/progress-tracker.md to mark this as in progress
+   then implement exactly as specified
+
+6. psuh to github  
+   create repositoy on github, then push the ghost-ai to github
+
+   echo "# ghost-ai" >> README.md
+   git init
+   git add README.md
+   git commit -m "first commit"
+   git branch -M main
+   git remote add origin git@github.com:hans21088/ghost-ai.git
+   git push -u origin main
+
+7. craete file      : app/context/feature-specs/02-editor.md
+   add content:
+   
+8. using (new)chat on VSCode and keyin    
+
+   read @context/feature-specs/02-editor.md
+   update the tasks on the @context/progress-tracker.md and
+   then implement it exactly as specified    
+
+8-1.(test) using (same)chat on VSCode and keyin 
+   Use editor-navbar and project-sidebar these two components within a layout.
+   
+9. using (same)chat on VSCode and keyin
+   Push all the current changes to a new branch called development.   
