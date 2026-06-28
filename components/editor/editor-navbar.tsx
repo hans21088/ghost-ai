@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { PanelLeftOpen, PanelLeftClose } from 'lucide-react';
+import { UserButton } from '@clerk/nextjs';
 
 interface EditorNavbarProps {
   isSidebarOpen: boolean;
@@ -32,8 +33,10 @@ export function EditorNavbar({ isSidebarOpen, onToggleSidebar }: EditorNavbarPro
         {/* Center section */}
         <div className="flex-1" />
 
-        {/* Right section - Empty for now */}
-        <div className="flex items-center" />
+        {/* Right section - User menu */}
+        <div className="flex items-center">
+          <UserButton />
+        </div>
       </div>
     </nav>
   );

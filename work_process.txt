@@ -92,3 +92,6 @@ Success! Created ghost-ai at /Users/hans/ghost-ai
    
 9. using (same)chat on VSCode and keyin
    Push all the current changes to a new branch called development.   
+   
+10. Sign in clerk
+   
