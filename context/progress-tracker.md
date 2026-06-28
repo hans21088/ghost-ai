@@ -8,11 +8,11 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Editor UI Shell - COMPLETE
+- Authentication Setup - COMPLETE
 
 ## Current Goal
 
-- Build base chrome components for editor: navbar and sidebar shell - DONE
+- Integrate Clerk authentication with dark theme styling, auth pages, route protection, and navbar user menu - DONE
 
 ## Completed
 
@@ -24,11 +24,20 @@ Update this file whenever the current phase, active feature, or implementation s
 - Built test page with all components working and verified in dark theme
 - All components import without errors
 - No default light styling appears - dark theme applied throughout
-- Created `components/editor/editor-navbar.tsx` - fixed-height navbar with sidebar toggle button
+- Created `components/editor/editor-navbar.tsx` - fixed-height navbar with sidebar toggle button and UserButton
 - Created `components/editor/project-sidebar.tsx` - floating sidebar with tabs (My Projects/Shared) and empty placeholder states
 - Created `components/editor/dialog-pattern.tsx` - reusable dialog component supporting title, description, content, and footer actions
-- All new editor components compile without TypeScript errors
-- Dialog pattern is ready for future use in feature implementations
+- Installed @clerk/ui for Clerk theming
+- Wrapped root layout with ClerkProvider
+- Created sign-in page (/app/sign-in/[[...sign-in]]/page.tsx) with two-panel layout
+- Created sign-up page (/app/sign-up/[[...sign-up]]/page.tsx) with two-panel layout
+- Created proxy.ts for route protection (public routes: /sign-in, /sign-up; all others protected by default)
+- Updated app/page.tsx with redirect logic (authenticated → /editor, unauthenticated → /sign-in)
+- Added UserButton to editor navbar right section
+- Created app/editor/layout.tsx with navbar, sidebar, and editor page structure
+- Created app/editor/page.tsx as basic editor entry point
+- All components compile without TypeScript errors
+- Build passes successfully
 
 ## In Progress
 
@@ -36,7 +45,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Next Up
 
-- Project structure and authentication setup
+- Project structure and database setup
 
 ## Open Questions
 
